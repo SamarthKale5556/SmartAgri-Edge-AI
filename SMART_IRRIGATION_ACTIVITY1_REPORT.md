@@ -11,9 +11,9 @@
 | **Enrollment Number** | **ADT23SOCB0955** |
 | **Division** | **AIEC02** |
 | **Roll Number** | **37** |
-| **Project Workspace** | `Samarth Kale's Workspace` |
 | **Azure ML Workspace** | `ml-assignment5-samarthkale` |
-| **GitHub Repository** | `https://github.com/samarthkale/SmartAgri-Edge-AI` *(Replace with your link)* |
+| **GitHub Repository** | `https://github.com/SamarthKale5556/SmartAgri-Edge-AI` |
+| **Model Registry Asset** | `smart-irrigation-edge-rf:1` (Custom Scikit-Learn Pipeline) |
 
 ---
 
@@ -43,7 +43,7 @@ $$\text{Irrigation Directive} = \begin{cases}
 
 ### 3.1 Which Dataset Was Used?
 * **File:** `data/irrigation_sensor_data.csv`
-* **Total Samples:** 2,500 chronological observation records
+* **Total Samples:** 2,500 balanced chronological observation records
 * **Features:**
   1. `soil_moisture_percent` (0.0% to 100.0% volumetric water content)
   2. `temperature_c` (-5.0°C to 50.0°C ambient canopy temperature)
@@ -140,22 +140,17 @@ $$\text{Irrigation Directive} = \begin{cases}
 
 ---
 
-## 8. Application UI Walkthrough & Screenshots
+## 8. Operational Proof & Evidence Verification (2x2 Matrix)
 
-### 🖼️ Screenshot 1: Farm Command Centre & 3D Digital Twin
-*Shows 3D crop sectors, real-time sensor cards (Moisture: 44%, Temp: 24°C, Humidity: 72%, Rain: 14mm), and ML prediction outcome: `MOISTURE ADEQUATE • ACTUATOR: VALVE_CLOSED`.*
+The system's operational integrity, machine learning accuracy, and cloud synchronization are verified through the **4 core proofs of evidence**:
 
-### 🖼️ Screenshot 2: Live IoT Telemetry Simulator & Precision Calibrator
-*Shows scenario presets (Drought Stress, Adequate Post-Rain, Midday Heat Spike), manual input override sliders, and instant probability output (Confidence: 65.5%, Latency: 146ms).*
-
-### 🖼️ Screenshot 3: Interactive 3D Field Sector Zoom
-*Visual inspection of Sector 4 (Barley/Ripe) with farmer avatar patrolling crop rows and water tank monitoring.*
-
-### 🖼️ Screenshot 4: Telemetry History & Time-Series Sensor Dynamics
-*Interactive trend lines comparing Relative Humidity, Soil Moisture, and Temperature against the critical wilting threshold, backed by the SQLite event log.*
-
-### 🖼️ Screenshot 5: Held-Out Model Evaluation & Confusion Matrix
-*Complete scientific verification dashboard displaying the 88.20% accuracy, 257 TN / 184 TP confusion matrix, and Gini feature importances.*
+| 🌐 Proof 1: 3D Digital Twin Command Centre | 🎛️ Proof 2: Real-Time IoT Telemetry Simulator |
+| :---: | :---: |
+| ![3D Digital Twin](docs/screenshots/01_farm_3d_digital_twin.png) | ![IoT Telemetry Simulator](docs/screenshots/02_live_telemetry_simulator.png) |
+| **Interactive Three.js 3D Digital Twin**<br>Live WebGL rendering of 4 crop sectors, in-situ sensor telemetry cards, and offline Edge AI valve decision (`VALVE_CLOSED`, 74.8ms latency). | **Live Multi-Sensor Precision Calibrator**<br>Rapid scenario presets (Drought Stress, Midday Heat Spike), analog override sliders, and instant probability feedback. |
+| 📊 Proof 3: Scientific ML Verification (88.20% Accuracy) | ☁️ Proof 4: Azure Machine Learning Model Registry |
+| ![Model Evaluation](docs/screenshots/05_model_evaluation_metrics.png) | ![Azure ML Model Registry](docs/screenshots/06_azure_ml_registered_model.png) |
+| **Held-Out Test Set Verification (500 Samples)**<br>Proven 88.20% test accuracy, 90.20% precision, 257 TN / 184 TP confusion matrix, and Gini feature importances (`soil_moisture`: 68.69%). | **Microsoft Azure ML Studio Cloud Registry**<br>Official model artifact registration (`smart-irrigation-edge-rf:1`) inside workspace `ml-assignment5-samarthkale`. |
 
 ---
 
@@ -168,6 +163,6 @@ The **AgriSense Edge AI** project demonstrates a complete, production-grade impl
 ---
 
 ### 🔗 Project Links & Source Code
-* **GitHub Repository:** `https://github.com/samarthkale/SmartAgri-Edge-AI`
-* **Azure ML Studio:** `https://ml.azure.com` (Workspace: `ml-assignment5-samarthkale`)
+* **Official GitHub Repository:** [https://github.com/SamarthKale5556/SmartAgri-Edge-AI](https://github.com/SamarthKale5556/SmartAgri-Edge-AI)
+* **Azure ML Studio:** [https://ml.azure.com](https://ml.azure.com) (Workspace: `ml-assignment5-samarthkale`)
 * **Project Author:** **SAMARTH KALE (Enrollment: ADT23SOCB0955, Div: AIEC02, Roll No: 37)**

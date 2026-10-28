@@ -116,35 +116,32 @@ The pipeline was evaluated on **500 unseen held-out test samples** (20% stratifi
 
 ---
 
-## 🌐 3D Digital Twin Command Centre
+## 📸 Operational Proof & Evidence Verification (2x2 Matrix)
 
-The frontend represents a next-generation industrial SCADA system built with **React 19**, **Three.js**, **React Three Fiber (@react-three/fiber)**, and **Tailwind CSS**:
+The system's operational integrity, machine learning performance, and cloud synchronization are verified through the following **4 core proofs of evidence**:
 
-### 🌟 Live Application Screenshots
+<div align="center">
 
-#### 1. Farm Overview & Interactive 3D Digital Twin
-![Farm Overview 3D Digital Twin](docs/screenshots/01_farm_3d_digital_twin.png)
-*Figure 1: Real-time 3D field digital twin showing crop sectors, environmental telemetry cards (Moisture: 44%, Temp: 24°C, Humidity: 72%, Rain: 14mm), and in-situ inference result: `MOISTURE ADEQUATE • ACTUATOR: VALVE_CLOSED`.*
+| 🌐 Proof 1: 3D Digital Twin Command Centre | 🎛️ Proof 2: Real-Time IoT Telemetry Simulator |
+| :---: | :---: |
+| [![3D Digital Twin](docs/screenshots/01_farm_3d_digital_twin.png)](docs/screenshots/01_farm_3d_digital_twin.png) | [![IoT Telemetry Simulator](docs/screenshots/02_live_telemetry_simulator.png)](docs/screenshots/02_live_telemetry_simulator.png) |
+| **Interactive Three.js 3D Digital Twin**<br>Live WebGL rendering of 4 crop sectors, in-situ sensor telemetry cards (Moisture: 44%, Temp: 24°C, Humidity: 72%, Rain: 14mm), and offline Edge AI valve decision (`VALVE_CLOSED`, 74.8ms latency). | **Live Multi-Sensor Precision Calibrator**<br>Rapid scenario presets (Drought Stress, Mild Morning, Heat Spike), interactive analog override sliders, and immediate Edge AI inference probability feedback. |
+| 📊 Proof 3: Scientific ML Verification (88.20% Accuracy) | ☁️ Proof 4: Azure Machine Learning Model Registry |
+| [![Model Evaluation](docs/screenshots/05_model_evaluation_metrics.png)](docs/screenshots/05_model_evaluation_metrics.png) | [![Azure ML Model Registry](docs/screenshots/06_azure_ml_registered_model.png)](docs/screenshots/06_azure_ml_registered_model.png) |
+| **Held-Out Test Set Verification (500 Samples)**<br>Proven 88.20% test accuracy, 90.20% precision, 257 TN / 184 TP confusion matrix, and Gini feature importances (`soil_moisture`: 68.69%). | **Microsoft Azure ML Studio Cloud Registry**<br>Official enterprise model artifact registration (`smart-irrigation-edge-rf:1`) inside workspace `ml-assignment5-samarthkale` under Azure for Students. |
 
-#### 2. Live Farm Simulation & Precision Calibrator
-![Live Telemetry Simulator](docs/screenshots/02_live_telemetry_simulator.png)
-*Figure 2: Real-time sensor calibrator with interactive sliders, agricultural scenario presets (Drought Stress, Mild Morning, Heat Spike), and immediate actuator response (Confidence: 65.5%, Latency: 146ms).*
+</div>
 
-#### 3. Interactive 3D Field Sector Zoom & Patrolling Farmer
-![Field Sector Zoom](docs/screenshots/03_field_sector_environment.png)
-*Figure 3: Close-up 3D inspection of Sector 4 (Barley) with patrolling farmer avatar, crop rows, and water tank infrastructure.*
+<details>
+<summary><b>🔍 Click to expand supplementary field inspection & telemetry dynamics screenshots</b></summary>
+<br>
 
-#### 4. Telemetry History & Time-Series Sensor Dynamics
-![Telemetry History](docs/screenshots/04_telemetry_history_dynamics.png)
-*Figure 4: Multi-sensor dynamics curve (Humidity, Moisture, Temperature) vs. critical threshold (20%) backed by an embedded SQLite event log with CSV export.*
+| 🌾 Supplementary View A: 3D Sector Zoom & Patrolling Farmer | 📈 Supplementary View B: Telemetry Dynamics vs. Wilting Point |
+| :---: | :---: |
+| [![Field Sector Zoom](docs/screenshots/03_field_sector_environment.png)](docs/screenshots/03_field_sector_environment.png) | [![Telemetry History](docs/screenshots/04_telemetry_history_dynamics.png)](docs/screenshots/04_telemetry_history_dynamics.png) |
+| *Close-up WebGL view of Sector 4 (Barley) with patrolling farmer avatar and water tank monitoring.* | *Time-series trend lines comparing Humidity, Moisture, and Temperature against the 20% permanent wilting threshold.* |
 
-#### 5. Held-Out Model Evaluation & Confusion Matrix
-![Model Evaluation](docs/screenshots/05_model_evaluation_metrics.png)
-*Figure 5: Scientific model verification on 500 held-out test samples showing 88.20% accuracy, 257 TN / 184 TP confusion matrix, and Gini feature importances.*
-
-#### 6. Azure Machine Learning Studio Model Registry
-![Azure ML Registration](docs/screenshots/06_azure_ml_registered_model.png)
-*Figure 6: Confirmed model registration of `smart-irrigation-edge-rf:1` inside Microsoft Azure Machine Learning Studio under workspace `ml-assignment5-samarthkale`.*
+</details>
 
 ---
 
