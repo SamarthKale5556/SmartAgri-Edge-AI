@@ -120,21 +120,31 @@ The pipeline was evaluated on **500 unseen held-out test samples** (20% stratifi
 
 The frontend represents a next-generation industrial SCADA system built with **React 19**, **Three.js**, **React Three Fiber (@react-three/fiber)**, and **Tailwind CSS**:
 
-1. **Farm Overview & 3D Digital Twin:** 
-   * Interactive 3D crop environment with camera orbit, pan, and zoom.
-   * Procedural corn, wheat, barley, and soybean crop sectors with dynamic health matrices.
-   * Animated patrolling farmer avatar in reflective workwear and water tower storage indicator.
-   * Real-time sensor telemetry cards (Moisture, Canopy Temp, Humidity, Rain).
-2. **Live Farm Simulation & Precision Calibrator:**
-   * Test scenario presets: *Drought Stress, Adequate Post-Rain, Midday Heat Spike, Sensor Malfunction Trap*.
-   * Manual interactive sliders to test edge actuator reactions in real-time.
-3. **Telemetry History & Sensor Dynamics:**
-   * Multi-variable time-series charts tracking moisture vs. critical wilting point (20%).
-   * Searchable SQLite event ledger with instant CSV export.
-4. **Model Evaluation & Verification:**
-   * Live confusion matrix visualizer and Gini feature importance bar chart.
-5. **Azure ML Cloud Integration:**
-   * Live model asset tracking linking directly to Azure ML Studio.
+### 🌟 Live Application Screenshots
+
+#### 1. Farm Overview & Interactive 3D Digital Twin
+![Farm Overview 3D Digital Twin](docs/screenshots/01_farm_3d_digital_twin.png)
+*Figure 1: Real-time 3D field digital twin showing crop sectors, environmental telemetry cards (Moisture: 44%, Temp: 24°C, Humidity: 72%, Rain: 14mm), and in-situ inference result: `MOISTURE ADEQUATE • ACTUATOR: VALVE_CLOSED`.*
+
+#### 2. Live Farm Simulation & Precision Calibrator
+![Live Telemetry Simulator](docs/screenshots/02_live_telemetry_simulator.png)
+*Figure 2: Real-time sensor calibrator with interactive sliders, agricultural scenario presets (Drought Stress, Mild Morning, Heat Spike), and immediate actuator response (Confidence: 65.5%, Latency: 146ms).*
+
+#### 3. Interactive 3D Field Sector Zoom & Patrolling Farmer
+![Field Sector Zoom](docs/screenshots/03_field_sector_environment.png)
+*Figure 3: Close-up 3D inspection of Sector 4 (Barley) with patrolling farmer avatar, crop rows, and water tank infrastructure.*
+
+#### 4. Telemetry History & Time-Series Sensor Dynamics
+![Telemetry History](docs/screenshots/04_telemetry_history_dynamics.png)
+*Figure 4: Multi-sensor dynamics curve (Humidity, Moisture, Temperature) vs. critical threshold (20%) backed by an embedded SQLite event log with CSV export.*
+
+#### 5. Held-Out Model Evaluation & Confusion Matrix
+![Model Evaluation](docs/screenshots/05_model_evaluation_metrics.png)
+*Figure 5: Scientific model verification on 500 held-out test samples showing 88.20% accuracy, 257 TN / 184 TP confusion matrix, and Gini feature importances.*
+
+#### 6. Azure Machine Learning Studio Model Registry
+![Azure ML Registration](docs/screenshots/06_azure_ml_registered_model.png)
+*Figure 6: Confirmed model registration of `smart-irrigation-edge-rf:1` inside Microsoft Azure Machine Learning Studio under workspace `ml-assignment5-samarthkale`.*
 
 ---
 
