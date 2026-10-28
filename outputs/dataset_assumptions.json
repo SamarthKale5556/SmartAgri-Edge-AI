@@ -1,0 +1,49 @@
+{
+    "dataset_type": "Synthetic (Agronomic Heuristic Simulation)",
+    "random_seed": 42,
+    "num_samples": 2500,
+    "features": [
+        {
+            "name": "soil_moisture_percent",
+            "unit": "% (volumetric)",
+            "range": "8.0 - 60.0",
+            "description": "Volumetric soil water content measured in crop root zone."
+        },
+        {
+            "name": "temperature_c",
+            "unit": "\u00b0C",
+            "range": "15.0 - 42.0",
+            "description": "Ambient canopy air temperature."
+        },
+        {
+            "name": "humidity_percent",
+            "unit": "%",
+            "range": "15.0 - 95.0",
+            "description": "Relative air humidity influencing evapotranspiration."
+        },
+        {
+            "name": "rainfall_mm",
+            "unit": "mm",
+            "range": "0.0 - 45.0",
+            "description": "Precipitation recorded over the preceding 24-hour observation window."
+        }
+    ],
+    "target": {
+        "name": "irrigation_needed",
+        "classes": {
+            "0": "No irrigation needed (Soil moisture adequate or recent rain)",
+            "1": "Irrigation recommended (Soil water deficit under atmospheric demand)"
+        }
+    },
+    "generation_logic": {
+        "evaporative_demand_factor": "Scaled product of temperature and dryness index",
+        "soil_deficit_factor": "Moisture deficit relative to 36% field capacity",
+        "rain_suppression_factor": "Precipitation threshold suppression up to 8mm",
+        "stochastic_noise": "Gaussian perturbation std=0.06 plus 3.5% sensor/microclimate label flips",
+        "hard_boundary_rules": [
+            "soil_moisture < 18% and rainfall < 3mm forces irrigation=1",
+            "soil_moisture > 44% or rainfall > 14mm forces irrigation=0"
+        ]
+    },
+    "critical_honesty_notice": "Good validation scores on synthetic rule-generated data reflect consistency with the mathematical generation assumptions. It does not establish real-world agricultural accuracy on physical crops or live farm microclimates."
+}

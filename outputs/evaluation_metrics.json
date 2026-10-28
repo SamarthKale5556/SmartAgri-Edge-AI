@@ -1,0 +1,45 @@
+{
+    "model_name": "RandomForest_Irrigation_Classifier",
+    "model_version": "1.0.0",
+    "framework": "scikit-learn",
+    "pipeline_stages": [
+        "StandardScaler",
+        "RandomForestClassifier"
+    ],
+    "dataset_size_total": 2500,
+    "train_samples": 2000,
+    "test_samples": 500,
+    "features": [
+        "soil_moisture_percent",
+        "temperature_c",
+        "humidity_percent",
+        "rainfall_mm"
+    ],
+    "test_accuracy": 0.882,
+    "test_precision": 0.902,
+    "test_recall": 0.8251,
+    "test_f1_score": 0.8618,
+    "confusion_matrix": {
+        "tn": 257,
+        "fp": 20,
+        "fn": 39,
+        "tp": 184,
+        "matrix": [
+            [
+                257,
+                20
+            ],
+            [
+                39,
+                184
+            ]
+        ]
+    },
+    "feature_importances": {
+        "soil_moisture_percent": 0.6868984811012039,
+        "temperature_c": 0.06347463816481211,
+        "humidity_percent": 0.0760756301556725,
+        "rainfall_mm": 0.17355125057831153
+    },
+    "evaluation_notes": "Evaluated strictly on held-out test split (20%). Metrics reflect strong discriminative capacity on the synthetic agro-heuristic domain."
+}

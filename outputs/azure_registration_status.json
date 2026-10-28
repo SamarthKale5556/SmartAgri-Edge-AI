@@ -1,0 +1,7 @@
+{
+    "success": false,
+    "status": "AUTH_FAILED",
+    "timestamp": "2026-10-28 11:15:06",
+    "workspace": "ml-assignment5-samarthkale",
+    "error": "Timed out waiting for user to authenticate"
+}

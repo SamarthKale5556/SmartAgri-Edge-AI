@@ -1,0 +1,13 @@
+# Real-Time ML Application Using Azure Machine Learning and IoT Edge
+# Requirements Specification for Smart Agriculture Irrigation Prediction
+
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+joblib>=1.3.0
+streamlit>=1.35.0
+plotly>=5.20.0
+matplotlib>=3.8.0
+azure-ai-ml>=1.15.0
+azure-identity>=1.16.0
+pytest>=8.0.0
